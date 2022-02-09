@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="calculator">
+      <!-- buttons -->
+      <button class="btn btn_standard">standard</button>
+      <button class="btn btn_metric">Metric</button>
+      <!-- standard -->
+      <div class="standard">
+        <div>
+          <label>
+            Age <span>:</span>
+            <input type="text" id="standard_age" />
+          </label>
+          <span>(20 & above)</span>
+        </div>
+        <div>
+          <label>
+            Weight <span>:</span>
+            <input type="text" id="standard_Weight" />
+          </label>
+          <span id="weight_unit">lbs</span>
+        </div>
+        <div>
+          <label>
+            Height <span>:</span>
+            <input type="text" id="standard_height" />
+          </label>
+          <span id="height_unit">inches</span>
+        </div>
+      </div>
+
+      <!-- calculate -->
+      <button class="calculate_btn btn">Calculate</button>
+    </section>
+    <!-- result -->
+    <section class="result_container">
+      <div class="results_info">
+        <div class="underweight">
+          <div></div>
+          <span>Below 18.5</span>
+        </div>
+        <div class="normal">
+          <div></div>
+          <span>18.5 – 24.9</span>
+        </div>
+        <div class="overweight">
+          <div></div>
+          <span>25.0 – 29.9</span>
+        </div>
+        <div class="obesity">
+          <div></div>
+          <span>30.0 and Above</span>
+        </div>
+      </div>
+      <div class="result">
+        Your BMI is : <br />
+        <br />
+      </div>
+      <button class="btn rest-btn">Clear</button>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
